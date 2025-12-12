@@ -1,0 +1,22 @@
+{
+  "name": "lifelayer-clinic-saas",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "rm -rf node_modules packages/*/node_modules"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "turbo": "^1.10.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
